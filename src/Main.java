@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -101,12 +103,9 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
         //пишем код для задачи 7
-        int one;
-        one = 7;
-        int two;
-        two = 12;
-        int three;
-        three = 3;
+        int one = 6;
+        int two = 9;
+        int three = 9;
         if (one > two && one > three) {
             System.out.println("Первое число большее");
         } else if (two > one && two > three) {
@@ -114,6 +113,16 @@ public class Main {
         } else if (three > one && three > two) {
             System.out.println("Третье число большее");
         }
+        if (one == two && one == three) {
+            System.out.println("все числа равны");
+        } else if (one == two) {
+            System.out.println("Перове и Второе число равны");
+        } else if (one == three) {
+            System.out.println("Перове и Третье число равны");
+        } else if (two == three) {
+            System.out.println("Второе и Третье число равны");
+        }
+
 
     }
 }
