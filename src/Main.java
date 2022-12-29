@@ -101,28 +101,23 @@ public class Main {
     }
 
     public static void task7() {
-        System.out.println("Задача 7");
+        System.out.println("задача 7");
         //пишем код для задачи 7
         int one = 6;
         int two = 9;
-        int three = 9;
-        if (one > two && one > three) {
-            System.out.println("Первое число большее");
-        } else if (two > one && two > three) {
-            System.out.println("Второе число большее");
-        } else if (three > one && three > two) {
-            System.out.println("Третье число большее");
-        }
+        int three = 6;
+
         if (one == two && one == three) {
             System.out.println("все числа равны");
-        } else if (one == two) {
-            System.out.println("Перове и Второе число равны");
-        } else if (one == three) {
-            System.out.println("Перове и Третье число равны");
-        } else if (two == three) {
-            System.out.println("Второе и Третье число равны");
+        } else if (one >= two && one >= three) {
+            System.out.println("максимальное число " + one);
+        } else if (two >= one && two >= three) {
+            System.out.println("максимальное число " + two);
+        } else if (three >= one && three >= two) {
+            System.out.println("максимальное число " + three);
         }
-
-
     }
+
+
+
 }
